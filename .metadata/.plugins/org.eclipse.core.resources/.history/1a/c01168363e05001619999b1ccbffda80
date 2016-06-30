@@ -1,0 +1,52 @@
+package me.bunao.www.test;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.List;
+
+import org.jdom2.Document;
+import org.jdom2.Element;
+import org.jdom2.JDOMException;
+import org.jdom2.input.SAXBuilder;
+
+public class JDOMTest {
+
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		// 进行对book.xml文件的JDOM解析
+		// 准备工作
+		// 1、创建SAXBuilder的对象
+		SAXBuilder saxBuilder = new SAXBuilder();
+		// 创建一个输入流
+		InputStream in;
+		try {
+			// 创建一个输入流
+			in = new FileInputStream("book.xml");
+			// 将输入流加载到saxBuilder中
+			Document document = saxBuilder.build(in);
+			// 通过document对象获取xml文件的根节点
+			Element rootElement = document.getRootElement();
+			// 获取根节点下的子节点的list集合
+			List<Element> bookList = rootElement.getChildren();
+
+			// 进行解析
+			for (Element book : bookList) {
+				System.out.println("========开始解析第" + (bookList.indexOf(book) + "本书====================="));
+				System.out.println("========结束解析第" + (bookList.indexOf(book) + "本书====================="));
+			}
+		} catch (FileNotFoundException e) {
+			// TODO 自动生成的 catch 块
+			e.printStackTrace();
+		} catch (JDOMException e) {
+			// TODO 自动生成的 catch 块
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO 自动生成的 catch 块
+			e.printStackTrace();
+		}
+
+	}
+
+}

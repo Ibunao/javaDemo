@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="将类型“tongxun.UTLTest1”重命名为“URLTest1”&#x0D;&#x0A;－ 原始项目：“javaexercise”&#x0D;&#x0A;－ 原始元素：“tongxun.UTLTest1”&#x0D;&#x0A;－ 重命名的元素：“tongxun.URLTest1”&#x0D;&#x0A;－ 更新对已重构元素的引用&#x0D;&#x0A;－ 更新注释和字符串中出现的文本" description="重命名类型“UTLTest1”" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;tongxun{UTLTest1.java[UTLTest1" matchStrategy="1" name="URLTest1" qualified="false" references="true" similarDeclarations="false" stamp="1462667456308" textual="false" version="1.0"/>
+</session>

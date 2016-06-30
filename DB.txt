@@ -1,0 +1,20 @@
+CREATE TABLE goddess(
+	id SMALLINT PRIMARY KEY AUTO_INCREMENT,
+	user_name VARCHAR(30) NOT NULL,
+	sex BOOLEAN,
+	age TINYINT,
+	birthday DATE,
+	email VARCHAR(30),
+	mobile VARCHAR(11),
+	create_user VARCHAR(30),
+	create_date DATE,
+	update_user VARCHAR(30),
+	update_date DATE,
+	isdel BOOLEAN
+)ENGINE=INNODB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
+
+ALTER DATABASE jdbc DEFAULT CHARACTER SET 'utf8';
+SET character_set_client='utf8';
+SET character_set_connection='utf8';
+SET character_set_results='utf8';
+

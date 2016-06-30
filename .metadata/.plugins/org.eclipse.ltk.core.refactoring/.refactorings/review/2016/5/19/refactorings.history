@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="将编译单元“date.CalanderTest.java”重命名为“CalenderTest.java”&#x0D;&#x0A;－ 原始项目：“review”&#x0D;&#x0A;－ 原始元素：“date.CalanderTest.java”&#x0D;&#x0A;－ 重命名的元素：“date.CalenderTest.java”" description="重命名编译单元“CalanderTest.java”" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;date{CalanderTest.java" name="CalenderTest.java" references="false" stamp="1462621393827" version="1.0"/>
+</session>
